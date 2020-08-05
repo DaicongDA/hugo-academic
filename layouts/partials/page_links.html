@@ -133,7 +133,7 @@
 </a>
 {{ end }}
 {{ range $page.Params.links }}
-  {{ $pack := or .icon_pack "fas" }}
+  {{ $pack := or $.icon_pack "fas" }}
   {{ $pack_prefix := $pack }}
   {{ if in (slice "fab" "fas" "far" "fal") $pack }}
     {{ $pack_prefix = "fa" }}
